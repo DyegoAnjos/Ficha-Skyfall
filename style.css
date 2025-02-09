@@ -1,0 +1,311 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+h2{
+    margin: 5px;
+}
+h3{
+    margin: 5px;
+}
+textarea {
+    font-size: 12px;
+    text-align: left;
+    width: calc(100% - 20px - 2px);
+    border-radius: 5px;
+    padding: 0px;
+    resize: none;
+    overflow: visible;
+  }
+
+form.ficha {
+    background-color: white;
+    color: purple;
+    width: 1000px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+}
+form.ficha ul {
+    display: inherit;
+    margin: 0;
+    padding: 0;
+}
+form.ficha ul li {
+    list-style-image: none;
+    display: block;
+}
+
+form.ficha section{
+    border: 1px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Header start */
+
+form.ficha header{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+}
+form.ficha header section.designacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#nome{
+    width: 200px;
+    height: 30px;
+    font-size: large;
+}
+form.ficha header section.designacao div{
+    flex-direction: row;
+    text-align: left;
+}
+#pronome{
+    width: 50%;
+}
+
+form.ficha header section.identificacao {
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+form.ficha header section.identificacao div{
+    display: flex;
+    flex-direction: row;
+}
+form.ficha header section.identificacao div div{
+    display: inherit;
+    flex-direction: column;
+}
+
+form.ficha header section.identificacao ul {
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+form.ficha header section.identificacao ul li {
+    width: 33.33333%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#niveldisplay{
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#nivel{
+    text-align: center;
+}
+#classedisplay{
+    width: 75%;
+    margin-right: 5%;
+}
+
+/* Header end */
+
+.contain{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#colunão{
+    width: 60.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Atributos e Proteções begin*/
+
+section.atributos ul{
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.atributos ul li{
+    align-items: center;
+}
+section.atributos input{
+    text-align: center;
+}
+li.atributos{
+    width: 16.66666%;
+    display: flex;
+    flex-direction: column;
+}
+li.atributos input{
+    width: 30%;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+li.protecoes{
+    width: 16.66666%;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+}
+li.protecoes input{
+    width: 50%;
+}
+li.protecoes label input{
+    width: auto;
+}
+
+/* Atributos e Proteções end*/
+
+/* Recursos begin*/
+
+section.recursos{
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+}
+#spacing{
+    width: 5px;
+}
+section.recursos ul{
+    display: block;
+}
+section.recursos input{
+    width: 20%;
+}
+section.recursos input[name=sombra], 
+section.recursos input[name=morte]{
+    width: auto;
+}
+/* recursos end */
+
+/* Fastinfo begin */
+section.fastinfo ul{
+    padding: 10px 0px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+section.fastinfo ul li{
+    width: 50%;
+}
+section.fastinfo ul li input[type=number]{
+    width: 20%;
+}
+section.fastinfo ul li select{
+    width: 35%;
+}
+section.fastinfo ul li.notao{
+    width: 100%;
+}
+section.fastinfo textarea{
+    height: 7em;
+}
+/* Fastinfo end */
+
+/* Pericias begin */
+
+section.pericias{
+    width: 25%;
+    text-align: left;
+}
+section.pericias input[type=text]{
+    width: 25%;
+}
+section.pericias input[type=number]{
+    width: 10%;
+}
+#maisaptidao{
+    padding: 1px;
+}
+/* Pericias end */
+
+/* características begin */
+
+section.caracteristicas{
+    width: 74.5%;
+    display: flex;
+    flex-direction: column;
+}
+section.caracteristicas div{
+    display: flex;
+}
+section.caracteristicas div ul{
+    display: block;
+    width: 50%;
+    border: 1px solid darkgray;
+    text-align: left;
+}
+section.caracteristicas div ul li{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-style: dashed;
+    border-color: darkblue;
+}
+/* caracteristicas end */
+
+/* habilidades begin */
+
+section.habilidades img{
+    height: 20px;
+}
+section.habilidades ul{
+    display: flex;
+}
+section.habilidades ul li{
+    border: 2px solid darkmagenta;
+}
+section.habilidades ul li div{
+    text-align: left;
+    margin: 0px;
+}
+section.habilidades ul li div.propriedades{
+    border: 1px solid lightblue;
+}
+section.habilidades ul li div.efeitos{
+    border: 1px solid lightblue;
+}
+
+#addhabilidade{
+    width: 100%;
+    height: 100%;
+}
+
+/* Habilidades end */
+
+/* equipamentos begin */
+section.equipamentos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section.equipamentos h2{
+    width: 100%;
+}
+section.equipamentos div{
+    width: 50%;
+}
+section.equipamentos ul{
+    width: 50%;
+    display: block;
+}
+section.equipamentos input[type=number]{
+    width: 20px;
+}
+/* equipamentos end */

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ficha Skyfall RPG</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <form class="ficha">
+            <header>
+                <section class="designacao">
+                    <label for="nome">Nome da Personagem</label> <input id="nome" name="nome">
+                    <div>
+                        <label for="pronome">Pronomes</label> <input id="pronome" name="pronome">
+                    </div>
+                </section>
+                <section class="identificacao">
+                    <ul>
+                        <li id="niveldisplay"> <label for="nivel">Nível</label> <input id="nivel" name="nivel" type="number" value="0"> </li>
+                        <li id="classedisplay"> <label for="classe">Classe</label> <input id="classe" name="classe"> </li>
+                        <li> <label for="trilha">Trilha</label> <input id="trilha" name="trilha"></li>
+                        <li> <label for="legado">Legado</label> <input id="legado" name="legado"></li>
+                        <li> <label for="heranca">Herança</label> <input id="heranca" name="heranca"></li>
+                        <li> <label for="antece">Antecedente</label> <input id="antece" name="antece"></li>
+                        <li> <label for="maldicao">Maldição</label> <input id="maldicao" name="maldicao"></li>
+                        <li> <label for="jogador">Jogadore</label> <input id="jogador" name="jogador"></li>
+                    </ul>
+                </section>
+            </header>
+            <div class="contain">
+                <section class="recursos">
+                    <h2>Recursos</h2>
+                    <ul>
+                        <li><label for="vida">PV</label> / <label for="vidamax">Máx.</label></li>
+                        <li><input type="number" id="vida" name="vida"> / <input readonly="true" type="number" id="vidamax" name="vidamax"></li>
+                        <li><label for="vidatemp">Temp:</label><input type="number" id="vidatemp" name="vidatemp"></li>
+
+                        <li><label for="dvida">Dados de Vida</label> / <label for="dvidamax">Máx.</label></li>
+                        <li><input id="dvida" name="dvida"> / <input id="dvidamax" name="dvidamax"></li>
+                        <li><label for="dvidatemp">Temp:</label><input type="number" id="dvidatemp" name="dvidatemp"></li>
+
+                        <li><label for="enfase">PE</label> / <label for="enfasemax">Máx.</label></li>
+                        <li><input type="number" id="enfase" name="enfase"> / <input readonly="true" type="number" id="enfasemax" name="enfasemax"></li>
+                        <li><label for="enfasetemp">Temp:</label><input type="number" id="enfasetemp" name="enfasetemp"></li>
+
+                        <li><label for="catarse">Catarse:</label> <input type="number" name="catarse" id="catarse" value="0"></li>
+                        <li><label for="sombra">Pontos de Sombra</label></li>
+                        <li><input type="checkbox" name="sombra" id="sombra1"><input type="checkbox" name="sombra" id="sombra2"><input type="checkbox" name="sombra" id="sombra3"><input type="checkbox" name="sombra" id="sombra4"><input type="checkbox" name="sombra" id="sombra5"></li>
+
+                        <li><label for="morte">Testes de Morte</label></li>
+                        <li><input type="checkbox" name="morte" id="morte1"><input type="checkbox" name="morte" id="morte2"><input type="checkbox" name="morte" id="morte3"></li>
+                    </ul>
+                </section>
+                <div id="colunão">
+                    <section class="atributos">
+                        <h2>Atributos</h2>
+                        <ul>
+                            <li class="atributos"> <label for="for">FOR</label> <input type="number" id="for" name="for" value="0"></li>
+                            <li class="atributos"> <label for="des">DES</label> <input type="number" id="des" name="des" value="0"></li>
+                            <li class="atributos"> <label for="con">CON</label> <input type="number" id="con" name="con" value="0"></li>
+                            <li class="atributos"> <label for="int">INT</label> <input type="number" id="int" name="int" value="0"></li>
+                            <li class="atributos"> <label for="sab">SAB</label> <input type="number" id="sab" name="sab" value="0"></li>
+                            <li class="atributos"> <label for="car">CAR</label> <input type="number" id="car" name="car" value="0"></li>
+                            <li class="protecoes"> <label for="protfor"><input type="checkbox" name="profprotfor"> proteção</label> <input type="number" id="protfor" name="protfor" value="10"></li>
+                            <li class="protecoes"> <label for="protdes"><input type="checkbox" name="profprotdes"> proteção</label> <input type="number" id="protdes" name="protdes" value="10"></li>
+                            <li class="protecoes"> <label for="protcon"><input type="checkbox" name="profprotcon"> proteção</label> <input type="number" id="protcon" name="protcon" value="10"></li>
+                            <li class="protecoes"> <label for="protint"><input type="checkbox" name="profprotint"> proteção</label> <input type="number" id="protint" name="protint" value="10"></li>
+                            <li class="protecoes"> <label for="protsab"><input type="checkbox" name="profprotsab"> proteção</label> <input type="number" id="protsab" name="protsab" value="10"></li>
+                            <li class="protecoes"> <label for="protcar"><input type="checkbox" name="profprotcar"> proteção</label> <input type="number" id="protcar" name="protcar" value="10"></li>
+                        </ul>
+                    </section>
+                    <section class="fastinfo">
+                        <ul>
+                            <li><label for="iniciativa">Iniciativa:</label> <input type="number" name="iniciativa" id="iniciativa" value="0"></li>
+                            <li><label for="deslocamento">Deslocamento:</label> <input type="number" name="deslocamento" id="deslocamento" value="0"></li>
+                            <li><label for="rd">Redução de Dano:</label> <input type="number" name="rd" id="rd" value="0"></li>
+                            <li><label for="tamanho">Tamanho:</label> <select id="tamanho" name="tamanho">
+                                <option value="minúsculo">minúsculo</option>
+                                <option value="pequeno">pequeno</option>
+                                <option value="médio">médio</option>
+                                <option value="grande">grande</option>
+                                <option value="enorme">enorme</option>
+                                <option value="imenso">imenso</option>
+                            </select></li>
+                            <li><label for="proficiencia">Bônus de proficiência:</label><input readonly="true" type="number" value="2" id="proficiencia" name="proficiencia"></textarea></li>
+                            <li><label for="notas">Notas:</label></li>
+                            <li class="notao"><textarea id="notas" name="notas"></textarea></li>
+                        </ul>
+                    </section>
+                </div>
+                <section class="pericias">
+                    <h2>Pericias</h2>
+                    <ul>
+                        <li><input type="checkbox" name="profapresentacao"><input type="checkbox" name="expeapresentacao"><label for="apresentacao">Apresentação</label><input type="number" readonly="true" name="apresentacao" id="apresentacao" value="0"></li>
+                        <li id="aptidao"><input type="checkbox" name="profaptidao1"><input type="checkbox" name="expeaptidao1"><label for="aptidao1">Aptidão<input type="text" name="especificacao1"></label><input type="number" readonly="true" name="aptidao1" id="aptidao1" value="0"><button id="maisaptidao" type="button">+</button></li>
+                        <li><input type="checkbox" name="profarcanismo"><input type="checkbox" name="expearcanismo"><label for="arcanismo">Arcanismo</label><input type="number" readonly="true" name="arcanismo" id="arcanismo" value="0"></li>
+                        <li><input type="checkbox" name="profcultura"><input type="checkbox" name="expecultura"><label for="cultura">Cultura</label><input type="number" readonly="true" name="cultura" id="cultura" value="0"></li>
+                        <li><input type="checkbox" name="profdoutrinas"><input type="checkbox" name="expedoutrinas"><label for="doutrinas">Doutrinas</label><input type="number" readonly="true" name="doutrinas" id="doutrinas" value="0"></li>
+                        <li><input type="checkbox" name="profdiplomacia"><input type="checkbox" name="expediplomacia"><label for="diplomacia">Diplomacia</label><input type="number" readonly="true" name="diplomacia" id="diplomacia" value="0"></li>
+                        <li><input type="checkbox" name="proffurtividade"><input type="checkbox" name="expefurtividade"><label for="furtividade">Furtividade</label><input type="number" readonly="true" name="furtividade" id="furtividade" value="0"></li>
+                        <li><input type="checkbox" name="profintimidacao"><input type="checkbox" name="expeintimidacao"><label for="intimidacao">Intimidação</label><input type="number" readonly="true" name="intimidacao" id="intimidacao" value="0"></li>
+                        <li><input type="checkbox" name="profintuicao"><input type="checkbox" name="expeintuicao"><label for="intuicao">Intuição</label><input type="number" readonly="true" name="intuicao" id="intuicao" value="0"></li>
+                        <li><input type="checkbox" name="profmagitec"><input type="checkbox" name="expemagitec"><label for="magitec">Magitec</label><input type="number" readonly="true" name="magitec" id="magitec" value="0"></li>
+                        <li><input type="checkbox" name="profmalandragem"><input type="checkbox" name="expemalandragem"><label for="malandragem">Malandragem</label><input type="number" readonly="true" name="malandragem" id="malandragem" value="0"></li>
+                        <li><input type="checkbox" name="profmanipulacao"><input type="checkbox" name="expemanipulacao"><label for="manipulacao">Manipulação</label><input type="number" readonly="true" name="manipulacao" id="manipulacao" value="0"></li>
+                        <li><input type="checkbox" name="profmedicina"><input type="checkbox" name="expemedicina"><label for="medicina">Medicina</label><input type="number" readonly="true" name="medicina" id="medicina" value="0"></li>
+                        <li><input type="checkbox" name="profnatureza"><input type="checkbox" name="expenatureza"><label for="natureza">Natureza</label><input type="number" readonly="true" name="natureza" id="natureza" value="0"></li>
+                        <li><input type="checkbox" name="profpercepcao"><input type="checkbox" name="expepercepcao"><label for="percepcao">Percepção</label><input type="number" readonly="true" name="percepcao" id="percepcao" value="0"></li>
+                        <li><input type="checkbox" name="profpreparo"><input type="checkbox" name="expepreparo"><label for="preparo">Preparo Físico</label><input type="number" readonly="true" name="preparo" id="preparo" value="0"></li>
+                    </ul>
+                </section>
+                <section class="caracteristicas">
+                    <h2>Características</h2>
+                    <div>
+                        <ul>
+                            <li><b>Características:</b> Lorum ipsilum <button type="button">edit</button></li>
+                            <li><button type="button">+</button></li>
+                        </ul>
+                        <ul>
+                            <li><b>Características:</b> Lorum ipsilum <button type="button">edit</button></li>
+                            <li><button type="button">+</button></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="contain">
+                <section class="ataques">
+                    <h2>Ataques</h2>
+                    <ul>
+                        <li><b>Nome</b> <b>Ataque</b>   <b>Dano</b></li>
+                        <li><input name="nomeataque0">:<input name="ataque0">-><input name="dano0"> <button type="button" name="rolarataque0">roll</button></li>
+                        <li><button type="button" name="addataque">+</button></li>
+                    </ul>
+                </section>
+                <section class="habilidades">
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>
+                            <img src="Simbolo Habilidades/Ação.png"> <b>Nome Habilidade</b> <b>1PE</b> <button type="button" name="edithabilidade0">edit</button><br>
+                            DESCRITOR CLASSE PROLETÁRIO<br>
+                            <div class="propriedades">
+                                <b>Alcance:</b> 9m<br>
+                                <b>Alvo:</b> 1 humanoide<br>
+                                <b>Duração:</b> instantânea<br>
+                                <b>Ataque:</b> Queda de Braço<br>
+                                <b>Gatilho:</b> violência
+                            </div>
+                            <div class="efeitos">
+                                <b>Acerto:</b> morte<br>
+                                <b>Erro:</b> risadas<br>
+                                <b>Efeito:</b> perda de noção<br>
+                                <b>Especial:</b> essa habilidade não pode ser usada
+                            </div>
+                            <div class="modificacao">
+                                <img src="Simbolo Habilidades/+Ações.png">+10PE[REMOVE]<br>
+                                <div class="propriedades"></div>
+                                <div class="efeitos">
+                                    <b>Especial:</b> essa habilidade não pode ser usada
+                                </div>
+                            </div>
+                        </li>
+                        <li><button id="addhabilidade" type="button" name="addhabilidade">+</button></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="contain">
+                <section class="equipamentos">
+                    <h2>Equipamentos</h2>
+                    <div>
+                        <label for="espa"><b>Espaços</b> </label><label for="espalimi"><b>Limite</b></label>:
+                        <input type="number" name="espa" id="espa" readonly="true"> / <input type="number" name="espalimi" id="espalimi" readonly="true"><br>
+                        <label for="espalimiextra">Limite extra: </label> <input type="number" name="espalimiextra" id="espalimiextra">
+                    </div>
+                    <div>
+                        <label for="frag"><b>Fragmentos</b> </label><label for="fraglimi"><b>Limite</b></label>:
+                        <input type="number" name="frag" id="frag" readonly="true"> / <input type="number" name="fraglimi" id="fraglimi" readonly="true"><br>
+                        <label for="trocados">Dinheiro: </label> <input name="trocados" id="trocados">
+                    </div>
+                    <ul class="magico">
+                        <li><label for="itemm0">Item</label> <label for="itemmespa0">Espaço</label> <label for="itemmfrag0">Fragmentos</label></li>
+                        <li><input name="itemm0" id="itemm0">-<input name="itemmespa0" id="itemmespa0" type="number">|<input name="itemmfrag0" id="itemmfrag0" type="number"></li>
+                        <li><button type="button" name="addequipamentom" id="addequipamentom">+</button></li>
+                    </ul>
+                    <ul class="mund">
+                        <li><label for="item0">Item</label> <label for="itemespa0">Espaço</label></li>
+                        <li><input name="item0" id="item0">-<input name="itemespa0" id="itemespa0" type="number"></li>
+                        <li><button type="button" name="addequipamento" id="addequipamento">+</button></li>
+                    </ul>
+                </section>
+            </div>
+        </form>
+    </body>
+</html>
