@@ -3,16 +3,15 @@
     <head>
         <title>Ficha Skyfall RPG</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <link rel="stylesheet" type="text/css" href="styleNew.css">
     </head>
     <body>
         <form class="ficha">
-            <header>
                 <section class="designacao">
+                    <img src="Marcos.png" alt="Imagem Jogador" srcset="">
                     <label for="nome">Nome da Personagem</label> <input id="nome" name="nome">
-                    <div>
-                        <label for="pronome">Pronomes</label> <input id="pronome" name="pronome">
-                    </div>
+                    <label for="pronome">Pronomes</label> <input id="pronome" name="pronome">
                 </section>
                 <section class="identificacao">
                     <ul>
@@ -26,9 +25,7 @@
                         <li> <label for="jogador">Jogadore</label> <input id="jogador" name="jogador"></li>
                     </ul>
                 </section>
-            </header>
-            <div class="contain">
-                <section class="recursos">
+                <section class="recursos contain">
                     <h2>Recursos</h2>
                     <ul>
                         <li><label for="vida">PV</label> / <label for="vidamax">Máx.</label></li>
@@ -51,8 +48,7 @@
                         <li><input type="checkbox" name="morte" id="morte1"><input type="checkbox" name="morte" id="morte2"><input type="checkbox" name="morte" id="morte3"></li>
                     </ul>
                 </section>
-                <div id="colunão">
-                    <section class="atributos">
+                <section class="atributos contain">
                         <h2>Atributos</h2>
                         <ul>
                             <li class="atributos"> <label for="for">FOR</label> <input type="number" id="for" name="for" value="0"></li>
@@ -60,7 +56,9 @@
                             <li class="atributos"> <label for="con">CON</label> <input type="number" id="con" name="con" value="0"></li>
                             <li class="atributos"> <label for="int">INT</label> <input type="number" id="int" name="int" value="0"></li>
                             <li class="atributos"> <label for="sab">SAB</label> <input type="number" id="sab" name="sab" value="0"></li>
-                            <li class="atributos"> <label for="car">CAR</label> <input type="number" id="car" name="car" value="0"></li>
+                            <li class="atributos"> <label for="car">CAR</label> <input type="number" id="car" name="car" value="0"></li>     
+                        </ul>
+                        <ul>
                             <li class="protecoes"> <label for="protfor"><input type="checkbox" name="profprotfor"> proteção</label> <input type="number" id="protfor" name="protfor" value="10"></li>
                             <li class="protecoes"> <label for="protdes"><input type="checkbox" name="profprotdes"> proteção</label> <input type="number" id="protdes" name="protdes" value="10"></li>
                             <li class="protecoes"> <label for="protcon"><input type="checkbox" name="profprotcon"> proteção</label> <input type="number" id="protcon" name="protcon" value="10"></li>
@@ -68,8 +66,8 @@
                             <li class="protecoes"> <label for="protsab"><input type="checkbox" name="profprotsab"> proteção</label> <input type="number" id="protsab" name="protsab" value="10"></li>
                             <li class="protecoes"> <label for="protcar"><input type="checkbox" name="profprotcar"> proteção</label> <input type="number" id="protcar" name="protcar" value="10"></li>
                         </ul>
-                    </section>
-                    <section class="fastinfo">
+                </section>
+                <section class="fastinfo contain">
                         <ul>
                             <li><label for="iniciativa">Iniciativa:</label> <input type="number" name="iniciativa" id="iniciativa" value="0"></li>
                             <li><label for="deslocamento">Deslocamento:</label> <input type="number" name="deslocamento" id="deslocamento" value="0"></li>
@@ -86,9 +84,8 @@
                             <li><label for="notas">Notas:</label></li>
                             <li class="notao"><textarea id="notas" name="notas"></textarea></li>
                         </ul>
-                    </section>
-                </div>
-                <section class="pericias">
+                </section>
+                <section class="pericias contain">
                     <h2>Pericias</h2>
                     <ul>
                         <li><input type="checkbox" name="profapresentacao"><input type="checkbox" name="expeapresentacao"><label for="apresentacao">Apresentação</label><input type="number" readonly="true" name="apresentacao" id="apresentacao" value="0"></li>
@@ -109,7 +106,7 @@
                         <li><input type="checkbox" name="profpreparo"><input type="checkbox" name="expepreparo"><label for="preparo">Preparo Físico</label><input type="number" readonly="true" name="preparo" id="preparo" value="0"></li>
                     </ul>
                 </section>
-                <section class="caracteristicas">
+                <section class="caracteristicas contain">
                     <h2>Características</h2>
                     <div>
                         <ul>
@@ -122,9 +119,7 @@
                         </ul>
                     </div>
                 </section>
-            </div>
-            <div class="contain">
-                <section class="ataques">
+                <section class="ataques contain">
                     <h2>Ataques</h2>
                     <ul>
                         <li><b>Nome</b> <b>Ataque</b>   <b>Dano</b></li>
@@ -132,7 +127,7 @@
                         <li><button type="button" name="addataque">+</button></li>
                     </ul>
                 </section>
-                <section class="habilidades">
+                <section class="habilidades contain">
                     <h2>Habilidades</h2>
                     <ul>
                         <li>
@@ -162,9 +157,7 @@
                         <li><button id="addhabilidade" type="button" name="addhabilidade">+</button></li>
                     </ul>
                 </section>
-            </div>
-            <div class="contain">
-                <section class="equipamentos">
+                <section class="equipamentos contain">
                     <h2>Equipamentos</h2>
                     <div>
                         <label for="espa"><b>Espaços</b> </label><label for="espalimi"><b>Limite</b></label>:
@@ -187,7 +180,6 @@
                         <li><button type="button" name="addequipamento" id="addequipamento">+</button></li>
                     </ul>
                 </section>
-            </div>
         </form>
     </body>
 </html>

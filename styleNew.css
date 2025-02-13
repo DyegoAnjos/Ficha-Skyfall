@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: "Afacad Flux", sans-serif;
+}
+
+html{
+    height: max-content;
+    min-height: 100vh;
+}
+
+body{
+    background-color: lightgray;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.ficha{
+    background-color: white;
+    color: purple;
+    width: 80%;
+    height: max-content;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "designacao identificacao identificacao"
+    "atributos atributos recursos"
+    "fastinfo fastinfo recursos"
+    "pericias caracteristicas caracteristicas"
+    "ataques ataques habilidades"
+    "equipamentos equipamentos equipamentos"
+    ;
+}
+
+.ficha ul li {
+    display: inherit;
+}
+
+.designacao{
+    grid-area: designacao;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+.identificacao{
+    grid-area: identificacao;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    li{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+.atributos{
+    grid-area: atributos;
+    width: 100%;
+    height: 100%;
+  
+    ul{
+        padding: 1rem 0px .5rem 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li{
+            width: 16%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            input{
+                text-align: center;
+            }
+        }
+        
+
+        li.protecoes{
+            width: 16%;
+            display: flex;
+            flex-direction: column;
+            font-size: small;
+        }
+    }
+}
+
+li.atributos input{
+    width: 50%;
+    height: 2rem;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+li.protecoes input{
+    width: 70%;
+}
+li.protecoes label input{
+    width: auto;
+}
+
+
+.fastinfo{
+    grid-area: fastinfo;
+}
+.pericias{
+    grid-area: pericias;
+}
+.caracteristicas{
+    grid-area: caracteristicas;
+}
+.recursos{
+    grid-area: recursos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li{
+        width: 100%;
+    }
+}
+.ataques{
+    grid-area: ataques;
+}
+.habilidades{
+    grid-area: habilidades;
+}
+.equipamentos{
+    grid-area: equipamentos;
+}
